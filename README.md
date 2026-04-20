@@ -1,36 +1,60 @@
-# coffee house ヒロ ランディングページ (LP)
+# コーヒーhouseヒロ ランディングページ (LP)
 
-岡山県倉敷市の週末限定ロースター「coffee house ヒロ」のための公式ランディングページです。
-React と Vite を使用して構築された、高速でモダンな静的シングルページアプリケーション（SPA）です。
+岡山県倉敷市の週末限定ロースター「コーヒーhouseヒロ」の公式ランディングページです。
+React と Vite を使用して構築された静的シングルページアプリケーション（SPA）です。
+
+## 技術スタック
+
+- **React 19** + **TypeScript**
+- **Vite 6**
+- **Tailwind CSS v4**
+- **Motion** (アニメーション)
+- **Lucide React** (アイコン)
+
+## ローカル開発
+
+```bash
+npm install
+npm run dev
+```
+
+開発サーバーは `http://localhost:3000` で起動します。
+
+## ビルド
+
+```bash
+npm run build
+```
+
+ビルド成果物は `dist` フォルダに生成されます。
 
 ## ホスティング（公開）方法
 
-このプロジェクトは静的なWebサイトとして動作するため、Vercel、Netlify、Cloudflare Pages などのモダンなホスティングサービスや、一般的なレンタルサーバーで簡単に公開することができます。
+静的なWebサイトとして動作するため、Vercel、Netlify、Cloudflare Pages などのモダンなホスティングサービスや、一般的なレンタルサーバーで公開できます。
 
-### 1. おすすめのホスティングサービス（Vercel, Netlify, Cloudflare Pagesなど）
+### Vercel / Netlify / Cloudflare Pages
 
-ソースコードを GitHub にプッシュし、ホスティングサービスと連携するのが最も簡単な方法です。
+GitHubにプッシュし、ホスティングサービスと連携するのが最も簡単な方法です。
 
-* **フレームワークプリセット**: `Vite` または `React`
-* **ビルドコマンド (Build Command)**: `npm run build`
-* **公開ディレクトリ (Output Directory / Publish directory)**: `dist`
+- **フレームワークプリセット**: `Vite`
+- **ビルドコマンド**: `npm run build`
+- **公開ディレクトリ**: `dist`
 
-### 2. レンタルサーバー（エックスサーバー、さくらのレンタルサーバ等）を使用する場合
+### レンタルサーバー（エックスサーバー、さくらのレンタルサーバ等）
 
-1. ローカル環境（お手元のパソコン）で以下のコマンドを実行し、ファイルをビルドします。
+1. ローカル環境でビルドします。
    ```bash
    npm install
    npm run build
    ```
-2. ビルドが完了すると、プロジェクト内に `dist` というフォルダが生成されます。
-3. FTPソフト（FileZillaなど）を使用し、`dist` フォルダの **中身すべて** を、ご契約中のサーバーの公開枠（`public_html` など）にアップロードしてください。
-
-## 環境変数についてのご注意
-
-* **`GEMINI_API_KEY` は不要です:**
-  このLPはAIによる動的生成機能等を使用しない純粋な静的Webサイトとして作られています。そのため、`.env` 等での `GEMINI_API_KEY` の登録や設定は一切必要ありません。
+2. `dist` フォルダの**中身すべて**を、FTPソフト（FileZillaなど）でサーバーの公開ディレクトリ（`public_html` など）にアップロードしてください。
 
 ## アセット（画像）の変更手順
 
-本番公開前にロゴなどの画像を差し替える場合、プロジェクト内の `public` フォルダ内にある画像ファイルを差し替えてください。
-* ロゴ画像: `public/logo.png`
+画像は `public/images/` に格納されています。差し替える場合は同名ファイルを上書きしてください。
+
+| ファイル | 用途 |
+|---|---|
+| `public/images/logo.jpg` | ロゴ画像 |
+| `public/images/favicon.png` | ファビコン |
+| `public/images/IMAGE_1.jpeg` 〜 `IMAGE_10.jpeg` | スライドショー画像 |
