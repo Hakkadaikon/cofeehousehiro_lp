@@ -198,18 +198,9 @@ export default function App() {
             
             <Mail className="w-6 h-6 text-paper/30 mx-auto mb-8" />
             <p className="font-sans text-[10px] tracking-[0.3em] text-paper/40 mb-10 uppercase">ご注文専用・お問い合わせ枠</p>
-            <a href="mailto:coffeehousehiro@gmail.com" className="font-serif text-xl md:text-3xl text-paper hover:text-caramel transition-colors tracking-widest block mb-12 break-all">
+            <a href="mailto:coffeehousehiro@gmail.com" className="font-serif text-xl md:text-3xl text-paper hover:text-caramel transition-colors tracking-widest block break-all">
               coffeehousehiro@gmail.com
             </a>
-            
-            <div className="flex justify-center">
-              <a href="mailto:coffeehousehiro@gmail.com?subject=コーヒー注文の件&body=・お名前：%0D%0A・ご住所：%0D%0A・お電話番号：%0D%0A%0D%0A【ご注文内容】%0D%0A（例：スペシャルティコーヒー 浅煎り 豆 200gを1袋、ピーナッツを1袋）%0D%0A%0D%0A・ご希望のお支払い方法：" 
-                 className="inline-flex items-center gap-6 border border-paper/30 px-12 py-5 font-serif text-[13px] tracking-[0.2em] hover:bg-paper hover:text-espresso transition-all group duration-500">
-                メールを作成する
-                <ChevronRight className="w-4 h-4 opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
-              </a>
-            </div>
-            <p className="mt-8 text-[11px] text-paper/40 tracking-widest">※ アプリが立ち上がらない場合はアドレスをコピーしてください</p>
           </div>
         </div>
       </section>
