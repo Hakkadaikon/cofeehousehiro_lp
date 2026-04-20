@@ -117,7 +117,7 @@ export default function App() {
       <nav className="absolute top-0 w-full z-50 py-6 px-6 md:px-12 flex justify-between items-center mix-blend-difference text-paper">
         <div className="font-serif text-lg tracking-widest flex items-center gap-3">
           <img src="/logo.png" alt="Logo" className="w-8 h-8 opacity-90 invert brightness-0" onError={(e) => e.currentTarget.style.display = 'none'} />
-          coffee house ヒロ
+          コーヒーhouseヒロ
         </div>
         <div className="hidden md:flex gap-8 text-xs font-medium tracking-[0.2em] uppercase">
           <a href="#about" className="hover:text-caramel transition-colors">Concept</a>
@@ -145,7 +145,7 @@ export default function App() {
               <div className="mb-12">
                 <img
                   src="/logo.png"
-                  alt="coffee house ヒロ"
+                  alt="コーヒーhouseヒロ"
                   className="h-[500px] w-auto invert brightness-0 opacity-90"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
@@ -161,7 +161,7 @@ export default function App() {
               </p>
             </div>
             <div className="flex-shrink-0 md:self-end">
-              <img src="/images/logo.jpg" alt="coffee house ヒロ" className="h-[500px] w-auto object-contain opacity-90" />
+              <img src="/images/logo.jpg" alt="コーヒーhouseヒロ" className="h-[500px] w-auto object-contain opacity-90" />
             </div>
           </motion.div>
         </div>
@@ -335,7 +335,7 @@ export default function App() {
               <div className="mb-10">
                 <img src="/logo.png" alt="Logo" className="w-20 opacity-40 invert brightness-0" onError={(e) => e.currentTarget.style.display = 'none'} />
               </div>
-              <p className="font-serif text-lg tracking-widest mb-8 text-paper/90">coffee house ヒロ</p>
+              <p className="font-serif text-lg tracking-widest mb-8 text-paper/90">コーヒーhouseヒロ</p>
               <div className="space-y-3 text-[13px] text-paper/50 tracking-widest font-light mb-12">
                 <p>〒712-8046</p>
                 <p>岡山県倉敷市福田町福田 2370-6</p>
