@@ -45,24 +45,29 @@ export default function App() {
         </div>
         
         <div className="max-w-6xl w-full mx-auto relative z-10">
-          <motion.div initial="hidden" animate="visible" variants={fadeIn} className="md:w-4/5 lg:w-3/4">
-            <div className="mb-12">
-              <img 
-                src="/logo.png" 
-                alt="coffee house ヒロ" 
-                className="w-48 md:w-64 invert brightness-0 opacity-90" 
-                onError={(e) => { 
-                  e.currentTarget.style.display = 'none'; 
-                }} 
-              />
+          <motion.div initial="hidden" animate="visible" variants={fadeIn} className="w-full flex flex-col md:flex-row md:items-end gap-8">
+            <div className="flex-1">
+              <div className="mb-12">
+                <img
+                  src="/logo.png"
+                  alt="coffee house ヒロ"
+                  className="h-[500px] w-auto invert brightness-0 opacity-90"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                  }}
+                />
+              </div>
+              <h1 className="font-serif text-[clamp(20px,4vw,56px)] leading-[1.5] mb-8 tracking-wider">
+                <span className="block mb-3 whitespace-nowrap">平日はサラリーマン、</span>
+                <span className="block whitespace-nowrap text-paper-dim">週末はロースター。</span>
+              </h1>
+              <p className="text-paper-dim tracking-[0.2em] font-light text-sm md:text-base border-l border-caramel pl-4 py-1">
+                スペシャルティコーヒーの舞台へ
+              </p>
             </div>
-            <h1 className="font-serif text-[28px] sm:text-4xl md:text-5xl lg:text-[56px] leading-[1.5] mb-8 tracking-wider whitespace-nowrap">
-              <span className="block mb-3">平日はサラリーマン、</span>
-              <span className="block text-paper-dim">週末はロースター。</span>
-            </h1>
-            <p className="text-paper-dim tracking-[0.2em] font-light text-sm md:text-base border-l border-caramel pl-4 py-1">
-              スペシャルティコーヒーの舞台へ
-            </p>
+            <div className="flex-shrink-0 md:self-end">
+              <img src="/images/logo.jpg" alt="coffee house ヒロ" className="h-[500px] w-auto object-contain opacity-90" />
+            </div>
           </motion.div>
         </div>
       </section>
