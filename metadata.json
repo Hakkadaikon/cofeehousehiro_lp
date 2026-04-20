@@ -1,6 +1,6 @@
 {
-  "name": "coffee house ヒロ LP",
-  "description": "岡山県倉敷市の週末ロースター「coffee house ヒロ」のランディングページ。商品の紹介とメールでの注文方法を案内します。",
-  "requestFramePermissions": [],
-  "majorCapabilities": []
+	"name": "coffee house ヒロ LP",
+	"description": "岡山県倉敷市の週末ロースター「coffee house ヒロ」のランディングページ。商品の紹介とメールでの注文方法を案内します。",
+	"requestFramePermissions": [],
+	"majorCapabilities": []
 }

@@ -1,23 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Shippori+Mincho:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Shippori+Mincho:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-  --font-serif: "Shippori Mincho", "Cormorant Garamond", serif;
-  
-  --color-espresso: #1A1412;
-  --color-roast: #3D2B1F;
-  --color-caramel: #8E5A35;
-  --color-paper: #F4F1EB;
-  --color-paper-dim: #EAE6DF;
+	--font-sans:
+		"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+	--font-serif: "Shippori Mincho", "Cormorant Garamond", serif;
+
+	--color-espresso: #1a1412;
+	--color-roast: #3d2b1f;
+	--color-caramel: #8e5a35;
+	--color-paper: #f4f1eb;
+	--color-paper-dim: #eae6df;
 }
 
 @layer base {
-  body {
-    @apply bg-paper text-espresso antialiased selection:bg-roast selection:text-paper;
-  }
+	body {
+		@apply bg-paper text-espresso antialiased selection:bg-roast selection:text-paper;
+	}
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
